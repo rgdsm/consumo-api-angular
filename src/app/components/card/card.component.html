@@ -1,0 +1,14 @@
+<div class="inputs">
+  <h3>Busque o usuário:</h3>
+  <input type="text" [(ngModel)]="searchName" placeholder="Digite o nome do usuário">
+  <button (click)="getName(searchName)">Buscar</button>
+</div>
+
+<div *ngFor="let repo of gitInfo" class="card">
+  <div class="cards__box">
+    <h3 class="title-name"><span class="repo-title">Repositório:</span> {{ repo.name }}</h3>
+  </div>
+  <div class="cards__box-2">
+    <h3 class="title-name"><span class="repo-title">Forks:</span> {{ repo.forks }}</h3>
+  </div>
+</div>

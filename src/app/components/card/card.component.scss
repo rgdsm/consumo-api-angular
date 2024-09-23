@@ -1,0 +1,20 @@
+$cardColor: #000;
+
+.card {
+    border: 1px solid $cardColor;
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    width: 500px;
+}
+
+
+
+.title-name {
+    font-weight: 300;
+}
+
+.repo-title {
+    font-weight: bold;
+}
